@@ -1,0 +1,23 @@
+
+{% load staticfiles %} 
+
+<html>
+    <head>
+        <title>Rango</title>
+        <link rel="stylesheet" herf="{% static "css/base.css" %}" />
+        <script src="{% static "js/jquery.js" % /></script>
+    </head>
+
+    <body>
+        <h1>Rango Says...</h1>
+        <div>
+           hey there partner! <br/>
+           <strong>{{ boldmessage }}</strong><br/>
+        </div>
+
+        <div>
+           <a herf="/rango/about/">About</a><br/>
+           <img src="{% static "images/111.jpg" %}" alt="LMAO" /> 
+    </body>
+
+</html>
