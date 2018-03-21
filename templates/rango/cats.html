@@ -2,13 +2,13 @@
 {% if cats %}
     {% for c in cats %}
         {% if c == act_cat %}
-            <li>
+            <li class="sidebar">
             <strong>
                 <a href="{% url 'rango:show_category' c.slug %}">{{c.name}}</a>
             </strong>
             </li>
         {% else %}
-            <li>
+            <li class="sidebar2">
                 <a href="{% url 'rango:show_category' c.slug %}">{{c.name}}</a>
             </li>
         {% endif %}
